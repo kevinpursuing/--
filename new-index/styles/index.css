@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: rgb(22, 18, 28);
+    max-width: 500px;
+}
+
+.wraper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background: url(../img/nav.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    top: 39px;
+    height: 204px;
+    background: url(../img/banner.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    -webkit-animation: aa 2s ease infinite;
+}
+@-webkit-keyframes aa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(-3px, -3px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+
+/*公告栏*/
+
+.notice_board {
+    width: 100%;
+    margin-top: 135px;
+    height: 69px;
+    background: url(../img/notice_board.png) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/*公告栏中的正方体*/
+
+.notice {
+    width: 100%;
+    margin-top: 20px;
+    height: 28px;
+    overflow: hidden;
+}
+
+.cube {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 14px;
+    -webkit-transform: rotateX(0deg);
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.5s ease;
+}
+@keyframes rr {
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+@-webkit-keyframes rr {
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+}
+
+.back {
+    background: rgb(72, 60, 76);
+    transform: translateZ(-14px) rotateY(0deg) rotateX(180deg);
+}
+
+.right {
+    background: rgb(72, 60, 76);
+    transform: rotateY(-270deg) translateX(14px);
+    transform-origin: top right;
+}
+
+.left {
+    background: rgb(72, 60, 76);
+    transform: rotateY(270deg) translateX(-14px);
+    transform-origin: center left;
+}
+
+.top {
+    background: rgb(72, 60, 76);
+    transform: rotateX(-270deg) rotateZ(180deg) rotateZ(180deg) translateY(-14px);
+    transform-origin: top center;
+}
+
+.bottom {
+    background: rgb(72, 60, 76);
+    transform: rotateX(270deg) translateY(14px);
+    transform-origin: bottom center;
+}
+
+.front {
+    background: rgb(72, 60, 76);
+    transform: translateZ(14px);
+}
+
+
+/*子导航栏*/
+
+.sub_nav {
+    width: 100%;
+    height: 62px;
+    float: left;
+}
+
+.section1 {
+    float: left;
+    height: 100%;
+    width: 142px;
+    margin-left: 46px;
+    background: url(../img/sub_nav.png) no-repeat;
+    background-size: 201%;
+    background-position: -151px 0px;
+}
+
+.section2 {
+    float: right;
+    height: 100%;
+    width: 141px;
+    margin-right: 46px;
+    background: url(../img/sub_nav.png) no-repeat;
+    background-size: 201%;
+    background-position: -151px 0px;
+}
+
+
+/*适配小屏幕设备*/
+
+@media screen and (max-width: 370px) {
+    .section1 {
+        float: left;
+        height: 100%;
+        width: 121px;
+        margin-left: 26px;
+        background: url(../img/sub_nav.png) no-repeat;
+        background-size: 201%;
+        background-position: -129px 4px;
+    }
+    .section2 {
+        float: right;
+        height: 100%;
+        width: 121px;
+        margin-right: 26px;
+        background: url(../img/sub_nav.png) no-repeat;
+        background-size: 201%;
+        background-position: -129px 4px;
+    }
+}
+
+.active {
+    background: url(../img/sub_nav.png) no-repeat;
+    background-size: 205%;
+    background-position: 0 0;
+}
+
+.no_active {
+    background: url(../img/sub_nav.png) no-repeat;
+    background-size: 201%;
+    background-position: -135px 0px;
+}
+
+.games {
+    position: relative;
+    width: 200%;
+    height: 226px;
+    float: left;
+    -webkit-transition: all 0.5s ease;
+}
+
+.game-type1 {
+    width: 50%;
+    height: 226px;
+    float: left;
+    background: url(../img/games.png) no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s ease;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background: url(../img/footer.png) no-repeat;
+    background-size: 100% 100%;
+}
