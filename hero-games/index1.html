@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/heroindex.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/fastClick.js"></script>
+</head>
+<body onload="test()">
+<script type="text/javascript">
+    $(function() {  
+    FastClick.attach(document.body);  
+}); 
+</script>
+    <div id="loading">
+    <div class="loading-words">欢迎来到英雄猜</div>
+    </div>
+    <div class="wrap">
+        <div class="line1">
+        <!-- 上期幸运英雄 -->
+            <div class="lastmonth">星英雄：<span style="color: red;font-weight: 800;"></span></div>
+            <!-- logo标志 -->
+            <div class="timo select"></div>
+            <div class="timo-words" style="display: none;"></div>
+            <!-- 时间倒计时 -->
+            <div class="time">
+                <p>当前剩余<span>10</span>s</p>
+                <div class="line"></div>
+            </div>
+        </div>
+        <!-- ap ad大类 -->
+        <div class="hero-class">
+            <div class="melee select">
+                <div class="num ad">0</div>
+            </div>
+            <div class="remote select">
+                <div class="num ap">0</div>
+            </div>
+        </div>
+        <!-- 近程ad 远程ad 近程ap 远程ap -->
+        <div class="hero-class1">
+            <div class="melee-ad select">
+                <div class="num m-ad">0</div>近战ad</div>
+            <div class="remote-ad select">
+                <div class="num r-ad">0</div>远程ad</div>
+            <div class="melee-ap select">
+                <div class="num m-ap">0</div>近战ap</div>
+            <div class="remote-ap select">
+                <div class="num r-ap">0</div>远程ap</div>
+        </div>
+        <!-- 12个英雄 -->
+        <div class="heros">
+            <div class=melee-hero>
+                <div class="hero1 select">
+                    <div class="num c-1">0</div>
+                </div>
+                <div class="hero2 select">
+                    <div class="num c-2">0</div>
+                </div>
+                <div class="hero3 select">
+                    <div class="num c-3">0</div>
+                </div>
+                <div class="hero4 select">
+                    <div class="num c-4">0</div>
+                </div>
+                <div class="hero5 select">
+                    <div class="num c-5">0</div>
+                </div>
+                <div class="hero6 select">
+                    <div class="num c-6">0</div>
+                </div>
+            </div>
+            <div class=remote-hero>
+                <div class="hero7 select">
+                    <div class="num c-7">0</div>
+                </div>
+                <div class="hero8 select">
+                    <div class="num c-8">0</div>
+                </div>
+                <div class="hero9 select">
+                    <div class="num c-9">0</div>
+                </div>
+                <div class="hero10 select">
+                    <div class="num c-10">0</div>
+                </div>
+                <div class="hero11 select">
+                    <div class="num c-11">0</div>
+                </div>
+                <div class="hero12 select">
+                    <div class="num c-12">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="users">
+        </div>
+        <div class="footer">
+            当前余额：<span>30000</span>金币
+        </div>
+        <!-- 英雄轮转出奖 -->
+        <div class="screen" style="visibility: hidden;">
+            <div class="herolist">
+                <div class="herolist-content">
+                    <div class="hero1"></div>
+                    <div class="hero2"></div>
+                    <div class="hero3"></div>
+                    <div class="hero4"></div>
+                    <div class="hero5"></div>
+                    <div class="hero6"></div>
+                    <div class="hero7"></div>
+                    <div class="hero8"></div>
+                    <div class="hero9"></div>
+                    <div class="hero10"></div>
+                    <div class="hero11"></div>
+                    <div class="hero12"></div>
+                </div>
+            </div>
+            <!--出奖结果面板展示 -->
+            <div class="result-show" style="opacity: 0;">
+                <div class="major-classes">
+                    <div class="major-class1">
+                        <div class="melee"></div>
+                    </div>
+                    <div class="major-class2">
+                        <div class="melee-ad"></div>
+                    </div>
+                </div>
+                <div class="lucky-hero"></div>
+            </div>
+        </div>
+        <!-- 金豆 -->
+        <div class="gold-bean"></div>
+        <div class="gold-bean1"></div>
+        <div class="gold-bean2"></div>
+        <div class="gold-bean3"></div>
+        <div class="gold-bean4"></div>
+    </div>
+    <script type="text/javascript" src="js/hero.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>
