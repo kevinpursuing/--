@@ -5,13 +5,31 @@
 
 html {
     background: rgb(22, 18, 28);
-    max-width: 500px;
 }
 
+
+/*去除mobile jquery上出现的loading*/
+
+.ui-loader-default {
+    display: none
+}
+
+.ui-mobile-viewport {
+    border: none;
+}
+
+.ui-page {
+    padding: 0;
+    margin: 0;
+    outline: 0
+}
+/**/
 .wraper {
     position: relative;
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
 }
 
@@ -33,6 +51,7 @@ header {
     z-index: -1;
     -webkit-animation: aa 2s ease infinite;
 }
+
 @-webkit-keyframes aa {
     0% {
         -webkit-transform: translate(0, 0);
@@ -79,6 +98,7 @@ header {
     margin-right: auto;
     -webkit-transition: all 0.5s ease;
 }
+
 @keyframes rr {
     100% {
         transform: rotateX(360deg);
@@ -186,7 +206,7 @@ header {
         background-position: -129px 4px;
     }
 }
-
+/*子导航栏的不同状态*/
 .active {
     background: url(../img/sub_nav.png) no-repeat;
     background-size: 205%;
@@ -198,7 +218,7 @@ header {
     background-size: 201%;
     background-position: -135px 0px;
 }
-
+/*游戏与竞猜模块*/
 .games {
     position: relative;
     width: 200%;
@@ -206,7 +226,7 @@ header {
     float: left;
     -webkit-transition: all 0.5s ease;
 }
-
+/*游戏竞猜子模块*/
 .game-type1 {
     width: 50%;
     height: 226px;
@@ -215,7 +235,7 @@ header {
     background-size: 100% 100%;
     transition: all 1s ease;
 }
-
+/*底部*/
 footer {
     position: fixed;
     width: 100%;

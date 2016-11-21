@@ -169,7 +169,7 @@
         };
         //提莫点击说话
         $(".timo").click(function() {
-            timoWordsShow()
+            timoWordsShow();
             $(".timo-words").fadeIn(300);
             setTimeout("$('.timo-words').fadeOut(300);", 3000);
         });
@@ -194,7 +194,3 @@
         $(function() {
             countDown();
         });
-        // // 测试
-        // $(".result-show").click(function() {
-        //     heroSelected(3);
-        // });
