@@ -4,8 +4,8 @@
 }
 
 html {
-    background: rgb(22, 18, 28);
     font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
+    background: rgb(22, 18, 28);
 }
 
 
@@ -74,7 +74,7 @@ header {
     position: absolute;
     width: 35px;
     height: 32px;
-    left: -9px;
+    left: -10px;
     top: 0;
     background: url(../img/gold.png) no-repeat;
     background-size: 100% 100%;
@@ -84,10 +84,148 @@ header {
     position: absolute;
     width: 39px;
     height: 28px;
-    right: -9px;
+    right: -10px;
     top: 0px;
     background: url(../img/plus.png) no-repeat;
     background-size: 200% 100%;
+}
+
+
+/*幕布*/
+
+.screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background: rgba(27, 6, 18, 0.7);
+}
+
+
+/*金币重置弹出框*/
+
+.gold_pop_up {
+    width: 100%;
+    height: 503px;
+    position: absolute;
+    z-index: 501;
+    top: 35px;
+    background: url(../img/recharge/main_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gpp_container {
+    width: 83%;
+    height: 89%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    box-sizing: border-box;
+}
+
+.gpp_top {
+    width: 95%;
+    height: 23px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 52px;
+    line-height: 23px;
+    border-radius: 3px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 4px;
+    color: rgb(181, 142, 67);
+    background: rgb(33, 26, 42);
+}
+
+.gold_detail {
+    width: 89px;
+    height: 100%;
+    float: right;
+    margin-right: 1px;
+}
+
+.golds_icon {
+    width: 20px;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    background: url(../img/recharge/gold_icon.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gold_lv {
+    width: 46%;
+    height: 131px;
+    margin-left: 2%;
+    margin-top: 10px;
+    float: left;
+    background: url(../img/recharge/bg1.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.gold_1 {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+}
+
+.gold_img {
+    width: 53px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gold_img1 {
+    background: url(../img/recharge/gold.png) no-repeat;
+    background-size: 555% 100%;
+    background-position: -1px 0;
+}
+
+.gold_img2 {
+    background: url(../img/recharge/gold.png) no-repeat;
+    background-size: 555% 100%;
+    background-position: -68px 0;
+}
+
+.gold_img3 {
+    background: url(../img/recharge/gold.png) no-repeat;
+    background-size: 555% 100%;
+    background-position: -222px 0;
+}
+
+.gold_img4 {
+    background: url(../img/recharge/gold.png) no-repeat;
+    background-size: 469% 100%;
+    background-position: -120px 0;
+}
+
+.gpp_content p {
+    color: rgb(221, 190, 67);
+}
+
+.get_btn {
+    width: 83px;
+    height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background: url(../img/recharge/get.png) no-repeat;
+    background-size: 211% 100%;
+    background-position: 0px 0;
+}
+
+.gold_lv5 {
+    width: 94%;
+    height: 111px;
+    margin-left: 2%;
+    margin-top: 10px;
+    float: left;
+    background: url(../img/recharge/bg2.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 
@@ -97,8 +235,8 @@ header {
     width: 40px;
     height: 41px;
     float: right;
-    margin-top: 3px;
-    margin-right: 60px;
+    margin-top: 5px;
+    margin-right: 28px;
     background: url(../img/prize.png) no-repeat;
     background-size: 100% 100%;
 }
@@ -156,7 +294,7 @@ header {
 
 .cube {
     position: relative;
-    width: 62%;
+    width: 56%;
     height: 28px;
     float: left;
     margin-left: 20%;
@@ -264,23 +402,30 @@ header {
 /*适配小屏幕设备*/
 
 @media screen and (max-width: 370px) {
+    .sub_nav {
+        width: 100%;
+        height: 88px;
+        margin-top: 154px;
+        float: left;
+        z-index: -100;
+    }
     .section1 {
         float: left;
         height: 100%;
         width: 121px;
-        margin-left: 26px;
-        background: url(../img/sub_nav.png) no-repeat;
-        background-size: 201%;
-        background-position: -129px 4px;
+        margin-left: 36px;
+        background: url(../img/sub_nav11.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
     }
     .section2 {
         float: right;
         height: 100%;
         width: 121px;
-        margin-right: 26px;
-        background: url(../img/sub_nav.png) no-repeat;
-        background-size: 201%;
-        background-position: -129px 4px;
+        margin-right: 36px;
+        background: url(../img/sub_nav22.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
     }
 }
 
@@ -319,7 +464,7 @@ header {
     width: 200%;
     float: left;
     -webkit-transition: all 0.5s ease;
-    height: 540px;
+    height: 270px;
 }
 
 

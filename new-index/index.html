@@ -8,7 +8,7 @@
     <title>主页</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jQueryMobile.js"></script>
     <script type="text/javascript" src="js/fastClick.js"></script>
 </head>
 
@@ -19,13 +19,60 @@
     });
     </script>
     <div class="wraper" id="games">
+        <!-- 幕布 -->
+        <section class="screen"></section>
         <!-- 导航栏 -->
         <header>
+            <!-- 金币框 -->
             <section class="gold_show">
                 <section class="gold_logo"></section>
                 <section class="gold_content">352232</section>
                 <section class="gold_plus"></section>
             </section>
+            <!-- 金币弹出框 -->
+            <section class="gold_pop_up">
+                <section class="gpp_container">
+                    <section class="gpp_top">
+                        <span class="golds">我的金币:<span class="my_golds">200000</span></span>
+                        <section class="gold_detail">
+                            <section class="golds_icon"></section>
+                            金币明细
+                        </section>
+                    </section>
+                    <section class="gpp_content">
+                        <section class="gold_lv gold_lv1">
+                            <section class="gold_1">
+                                <section class="gold_img gold_img1"></section>
+                            </section>
+                            <p>1000金币</p>
+                            <section class="get_btn"></section>
+                        </section>
+                        <section class="gold_lv gold_lv2">
+                            <section class="gold_1">
+                                <section class="gold_img gold_img2"></section>
+                            </section>
+                            <p>10000金币</p>
+                            <section class="get_btn"></section>
+                        </section>
+                        <section class="gold_lv gold_lv3">
+                            <section class="gold_1">
+                                <section class="gold_img gold_img3"></section>
+                            </section>
+                            <p>50000金币</p>
+                            <section class="get_btn"></section>
+                        </section>
+                        <section class="gold_lv gold_lv4">
+                            <section class="gold_1">
+                                <section class="gold_img gold_img4"></section>
+                            </section>
+                            <p>100000金币</p>
+                            <section class="get_btn"></section>
+                        </section>
+                        <section class="gold_lv5"></section>
+                    </section>
+                </section>
+            </section>
+            <!-- 领奖图标 -->
             <section class="accept_prize"></section>
         </header>
         <!-- 横幅 -->
@@ -51,17 +98,12 @@
             <section class="game">
                 <section class="fight"></section>
                 <section class="hero"></section>
-                <section class="fight"></section>
-                <section class="hero"></section>
             </section>
             <section class="guess">
                 <section class="fight"></section>
                 <section class="hero"></section>
-                <section class="fight"></section>
-                <section class="hero"></section>
             </section>
         </section>
-        <footer></footer>
     </div>
     <script type="text/javascript" src="js/screenJudge.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
