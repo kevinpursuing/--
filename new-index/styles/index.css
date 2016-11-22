@@ -5,6 +5,7 @@
 
 html {
     background: rgb(22, 18, 28);
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
 }
 
 
@@ -23,7 +24,10 @@ html {
     margin: 0;
     outline: 0
 }
-/**/
+
+
+/*主题容器*/
+
 .wraper {
     position: relative;
     width: 100%;
@@ -33,19 +37,81 @@ html {
     overflow: hidden;
 }
 
+
+/*头部*/
+
 header {
     width: 100%;
-    height: 85px;
+    height: 70px;
     background: url(../img/nav.png) no-repeat;
     background-size: 100% 100%;
 }
+
+
+/*金币充值栏*/
+
+.gold_show {
+    width: 108px;
+    height: 28px;
+    position: relative;
+    float: left;
+    margin-top: 9px;
+    margin-left: 20px;
+    background: url(../img/notice_content.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gold_content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 29px;
+    color: rgb(207, 207, 248);
+    font-size: 13px;
+}
+
+.gold_logo {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    left: -9px;
+    top: 0;
+    background: url(../img/gold.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gold_plus {
+    position: absolute;
+    width: 39px;
+    height: 28px;
+    right: -9px;
+    top: 0px;
+    background: url(../img/plus.png) no-repeat;
+    background-size: 200% 100%;
+}
+
+
+/*领奖按钮*/
+
+.accept_prize {
+    width: 40px;
+    height: 41px;
+    float: right;
+    margin-top: 3px;
+    margin-right: 60px;
+    background: url(../img/prize.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*横幅*/
 
 .banner {
     position: absolute;
     width: 100%;
     max-width: 500px;
     top: 39px;
-    height: 204px;
+    height: 185px;
     background: url(../img/banner.png) no-repeat;
     background-size: 100% 100%;
     z-index: -1;
@@ -68,9 +134,10 @@ header {
 /*公告栏*/
 
 .notice_board {
+    position: absolute;
     width: 100%;
-    margin-top: 135px;
-    height: 69px;
+    top: 207px;
+    height: 58px;
     background: url(../img/notice_board.png) no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
@@ -83,18 +150,20 @@ header {
 .notice {
     width: 100%;
     margin-top: 20px;
-    height: 28px;
+    height: 24px;
     overflow: hidden;
 }
 
 .cube {
     position: relative;
-    width: 100%;
+    width: 62%;
     height: 28px;
+    float: left;
+    margin-left: 20%;
     -webkit-transform-style: preserve-3d;
     -webkit-transform-origin: 50% 14px;
     -webkit-transform: rotateX(0deg);
-    margin-left: auto;
+    margin-left: 23%;
     margin-right: auto;
     -webkit-transition: all 0.5s ease;
 }
@@ -114,43 +183,49 @@ header {
 .cube div {
     position: absolute;
     width: 100%;
-    height: 28px;
+    height: 100%;
     text-align: center;
-    line-height: 28px;
+    line-height: 26px;
     color: white;
+    font-size: 12px;
+    color: rgb(132, 148, 198);
+}
+
+.cube div span {
+    color: rgb(240, 183, 22);
 }
 
 .back {
-    background: rgb(72, 60, 76);
+    background: rgb(27, 20, 30);
     transform: translateZ(-14px) rotateY(0deg) rotateX(180deg);
 }
 
 .right {
-    background: rgb(72, 60, 76);
+    background: rgb(27, 20, 30);
     transform: rotateY(-270deg) translateX(14px);
     transform-origin: top right;
 }
 
 .left {
-    background: rgb(72, 60, 76);
+    background: rgb(27, 20, 30);
     transform: rotateY(270deg) translateX(-14px);
     transform-origin: center left;
 }
 
 .top {
-    background: rgb(72, 60, 76);
+    background: rgb(27, 20, 30);
     transform: rotateX(-270deg) rotateZ(180deg) rotateZ(180deg) translateY(-14px);
     transform-origin: top center;
 }
 
 .bottom {
-    background: rgb(72, 60, 76);
+    background: rgb(27, 20, 30);
     transform: rotateX(270deg) translateY(14px);
     transform-origin: bottom center;
 }
 
 .front {
-    background: rgb(72, 60, 76);
+    background: rgb(27, 20, 30);
     transform: translateZ(14px);
 }
 
@@ -159,28 +234,30 @@ header {
 
 .sub_nav {
     width: 100%;
-    height: 62px;
+    height: 94px;
+    margin-top: 154px;
     float: left;
+    z-index: -100;
 }
 
 .section1 {
     float: left;
     height: 100%;
     width: 142px;
-    margin-left: 46px;
-    background: url(../img/sub_nav.png) no-repeat;
-    background-size: 201%;
-    background-position: -151px 0px;
+    margin-left: 39px;
+    background: url(../img/sub_nav11.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
 
 .section2 {
     float: right;
     height: 100%;
     width: 141px;
-    margin-right: 46px;
-    background: url(../img/sub_nav.png) no-repeat;
-    background-size: 201%;
-    background-position: -151px 0px;
+    margin-right: 39px;
+    background: url(../img/sub_nav22.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
 
 
@@ -206,36 +283,76 @@ header {
         background-position: -129px 4px;
     }
 }
+
+
 /*子导航栏的不同状态*/
-.active {
-    background: url(../img/sub_nav.png) no-repeat;
-    background-size: 205%;
+
+.active1 {
+    background: url(../img/sub_nav11.png) no-repeat;
+    background-size: 100% 100%;
     background-position: 0 0;
 }
 
-.no_active {
-    background: url(../img/sub_nav.png) no-repeat;
-    background-size: 201%;
-    background-position: -135px 0px;
+.active2 {
+    background: url(../img/sub_nav21.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
+
+.no_active1 {
+    background: url(../img/sub_nav12.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.no_active2 {
+    background: url(../img/sub_nav22.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+
 /*游戏与竞猜模块*/
+
 .games {
     position: relative;
     width: 200%;
-    height: 226px;
     float: left;
     -webkit-transition: all 0.5s ease;
+    height: 540px;
 }
+
+
 /*游戏竞猜子模块*/
-.game-type1 {
+
+.game,
+.guess {
     width: 50%;
-    height: 226px;
+    height: 270px;
     float: left;
-    background: url(../img/games.png) no-repeat;
+}
+
+.fight {
+    width: 100%;
+    height: 135px;
+    float: left;
+    background: url(../img/fight.png) no-repeat;
     background-size: 100% 100%;
     transition: all 1s ease;
 }
+
+.hero {
+    width: 100%;
+    height: 135px;
+    float: left;
+    background: url(../img/hero.png) no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s ease;
+}
+
+
 /*底部*/
+
 footer {
     position: fixed;
     width: 100%;

@@ -1,9 +1,17 @@
 // 公告栏正正方体初始角度
 var initialAngle = 0;
     // 子导航栏以及游戏类型切换
-$('.section1,.section2').click(function() {
-    $('.section1,.section2').removeClass("active");
-    $(this).addClass("active");
+$('.section1').click(function() {
+     $('.section2').removeClass("active2");
+   $('.section2').addClass("no_active2");
+    $(this).removeClass("no_active1");
+    $(this).addClass("active1");
+});
+$('.section2').click(function() {
+   $('.section1').removeClass("active1");
+   $('.section1').addClass("no_active1");
+    $(this).removeClass("no_active2");
+    $(this).addClass("active2");
 });
 $('.section1').click(function() {
     $('.games').css("-webkit-transform", "translate(0,0)");
