@@ -3,7 +3,7 @@ $(function() {
     // var A=$("#new_user").val();
     // var B=$("#past").val();
     // 定义的
-    var AA = -1;
+    var AA = -11;
     var BB = -1;
     if (AA == 1) {
         $(".screen3").show();
