@@ -2,13 +2,14 @@
 $(function() {
     // var A=$("#new_user").val();
     // var B=$("#past").val();
-    var AA =-1;
-    var BB =-1;
+    // 定义的
+    var AA = -1;
+    var BB = -1;
     if (AA == 1) {
         $(".screen3").show();
         $(".test_user_first").show();
-        if(BB!=-1){
-          $(".test_user_past .past-days:nth-of-type(" + BB + ")").css("background", "blue");
+        if (BB != -1) {
+            $(".test_user_past .past-days:nth-of-type(" + BB + ")").css("background", "blue");
         }
     } else if (BB != -1) {
         $(".screen3").show();
@@ -35,7 +36,7 @@ $(".test2_btn").click(function() {
         $(".test_user_past").hide();
     }, 1000);
 });
-    // 公告栏正正方体初始角度
+// 公告栏正正方体初始角度
 var initialAngle = 0;
 // 子导航栏以及游戏类型切换
 $('.section1').click(function() {
@@ -166,18 +167,28 @@ $(".get_btn,.lv5_get_btn").click(function() {
     console.log(pGalds);
     $(".sgp_golds span").text(rechargeGolds);
     $(".sgp_present span").text(pGalds);
-    $(".sgp_btn span").text(m);
+    $(".sgp_golds_m span").text(m);
 });
 // 支付成功弹出框
 $(".sgp_btn_wx,.sgp_btn_zfb").click(function() {
     $(".screen2").show();
     $(".recharge_success_popup").show();
     var rechargeGolds = $(".sgp_golds span").text();
+    if (rechargeGolds == 1000) {
+        $(".rsp_present_golds").css("visibility", "hidden");
+    }
     var pGalds = $(".sgp_present span").text();
     $(".rsp_get_golds span").text(rechargeGolds);
     $(".rsp_present_golds span").text(pGalds);
 });
 $(".rsp_confirm_btn").click(function() {
+    $(".rsp_present_golds").css("visibility", "visible");
     $(".screen2").hide();
     $(".recharge_success_popup").hide();
+});
+$(".rsp_confirm_btn").touchstart(function() {
+    $(this).addClass("rsp_confirm_btn_dark");
+});
+$(".rsp_confirm_btn").touchend(function() {
+    $(this).removeClass("rsp_confirm_btn_dark");
 });

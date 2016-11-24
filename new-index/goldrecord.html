@@ -20,7 +20,7 @@
    </script>
    <div class="wraper">
    <header>
-   金币明细记录（近三月）
+   金币明细记录（近三个月）
    </header>
    <section class="record-part">
        <section class="game-part">
@@ -28,7 +28,7 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
       <section class="record-part">
@@ -37,7 +37,7 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
       <section class="record-part">
@@ -46,7 +46,7 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
       <section class="record-part">
@@ -55,7 +55,7 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
       <section class="record-part">
@@ -64,7 +64,7 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
       <section class="record-part">
@@ -73,7 +73,7 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
       <section class="record-part">
@@ -82,17 +82,24 @@
                <section class="game_module">活动送</section>
                <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
            </section>
-           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+           <section class="game-part2"><span>-3200</span><img src="img/recharge/single_popup/gold.png"></section>
        </section>    
    </section>
    </div>
    <script type="text/javascript">
        $(function(){
-        var part_count=$(".record-part").size();
+        var part_count=$(".record-part").size()+1;
         console.log(part_count);
+        var test=parseInt($(".record-part:nth-of-type(1) .game-part2 span").text());
+        console.log(test);
         for (var i = 0; i < part_count; i++) {
             if(i%2===0){
                $(".record-part:nth-of-type("+i+")").addClass("record-part-light");
+            }
+            if (parseInt($(".record-part:nth-of-type("+i+") .game-part2 span").text())<=0){
+                $(".record-part:nth-of-type("+i+") .game-part2 span").css("color","rgb(132,148,198)");
+            }else {
+                $(".record-part:nth-of-type("+i+") .game-part2 span").text("+"+$(".record-part:nth-of-type("+i+") .game-part2 span").text());
             }
         }
        });

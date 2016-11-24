@@ -18,6 +18,7 @@
         FastClick.attach(document.body);
     });
     </script>
+    <!-- 主体容器 -->
     <div class="wraper" id="games">
         <input id="new_user" type="hidden" value="" name="new_user" />
         <input id="past" type="hidden" value="" name="past" />
@@ -30,7 +31,7 @@
         <!-- 签到和首次登陆领取金币幕布 -->
         <section class="screen3" style="display: none;">
             <section class="test_user_first" style="display: none;">
-                <p>新用户获取8000000金币</p>
+                <p>新用户获取8000金币</p>
                 <section class="test1_close">x</section>
                 <section class="test_btn test1_btn">点击跳转</section>
             </section>
@@ -65,7 +66,9 @@
         </section>
         <!-- 支付成功弹出框 -->
         <section class="recharge_success_popup" style="display: none;">
+            <section class="rsp_star"></section>
             <section class="accept_prize_success"></section>
+            <section class="rsp_sun"></section>
             <section class="rsp_get_golds">已获<span>50000</span><img src="img/recharge/single_popup/gold.png"></section>
             <section class="rsp_present_golds">赠送<span>10000</span>金币</section>
             <section class="rsp_confirm_btn"></section>
@@ -157,7 +160,7 @@
                 <section class="sgp_tips">您将充值贝壳，充值后将自动兑换<img src="img/recharge/single_popup/suggest.png"></section>
                 <section class="sgp_line"></section>
                 <section class="game_protocol">
-                    <img src="img/recharge/single_popup/no_tick.png">
+                    <img src="img/recharge/single_popup/tick.png">
                     <span>我已阅读并同意《玩贝电竞游戏协议》</span>
                 </section>
             </section>
@@ -195,15 +198,9 @@
             </section>
         </section>
     </div>
+    <!-- 对屏幕尺寸做判断 -->
     <script type="text/javascript" src="js/screenJudge.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-    $(document).bind('mobileinit', function() {
-        $.mobile.changePage.defaults.changeHash = false;
-        $.mobile.hashListeningEnabled = false;
-        $.mobile.pushStateEnabled = false;
-    });
-    </script>
 </body>
 
 </html>
