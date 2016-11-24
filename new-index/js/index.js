@@ -2,6 +2,8 @@
 $(function() {
     // var A=$("#new_user").val();
     // var B=$("#past").val();
+        // var A=$("#new_user").val();
+    // var B=$("#past").val()
     var AA =-1;
     var BB =-1;
     if (AA == 1) {
