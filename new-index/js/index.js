@@ -36,7 +36,7 @@ $(".test2_btn").click(function() {
         $(".test_user_past").hide();
     }, 1000);
 });
-// 公告栏正正方体初始角度
+// 公告栏正方体初始角度
 var initialAngle = 0;
 // 子导航栏以及游戏类型切换
 $('.section1').click(function() {
