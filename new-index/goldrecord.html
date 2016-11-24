@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="styles/gold-record.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jQueryMobile.js"></script>
+    <script type="text/javascript" src="js/fastClick.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    $(function() {
+        FastClick.attach(document.body);
+    });
+   </script>
+   <div class="wraper">
+   <header>
+   金币明细记录（近三月）
+   </header>
+   <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+      <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+      <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+      <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+      <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+      <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+      <section class="record-part">
+       <section class="game-part">
+           <section class="game-part1">
+               <section class="game_module">活动送</section>
+               <section class="game_play_time"><span class="game_play_day">11.24</span><span class="game_play_minute">10:01</span></section>
+           </section>
+           <section class="game-part2"><span>+3200</span><img src="img/recharge/single_popup/gold.png"></section>
+       </section>    
+   </section>
+   </div>
+   <script type="text/javascript">
+       $(function(){
+        var part_count=$(".record-part").size();
+        console.log(part_count);
+        for (var i = 0; i < part_count; i++) {
+            if(i%2===0){
+               $(".record-part:nth-of-type("+i+")").addClass("record-part-light");
+            }
+        }
+       });
+   </script>
+</body>
+</html>
