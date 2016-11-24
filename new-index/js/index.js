@@ -1,4 +1,4 @@
-//签到和首次登陆弹框
+//签到和首次登陆弹框//
 $(function() {
     // var A=$("#new_user").val();
     // var B=$("#past").val();
