@@ -28,41 +28,68 @@
         <section class="screen1" style="display: none;"></section>
         <!-- 充值成功幕布 -->
         <section class="screen2" style="display: none;"></section>
-        <!-- 签到和首次登陆领取金币幕布 -->
-        <section class="screen3" style="display: none;">
-            <section class="test_user_first" style="display: none;">
-                <p>新用户获取8000金币</p>
-                <section class="test1_close">x</section>
-                <section class="test_btn test1_btn">点击跳转</section>
+        <!-- 签到和首次登陆领取金币 -->
+        <section class="screen3">
+            <section class="user_first">
+                <section class="user_first_btn"></section>
             </section>
-            <section class="test_user_past" style="display: none;">
-                <p>这是签到弹出框</p>
-                <section class="past-days">
-                    <p>第1天</p>
-                    <p>100金币</p>
+            <section class="user_past" style="display: none;">
+                <section class="user_past_close"></section>
+                <section class="user_past_top">
+                    <span>签到领金币!</span>
+                    <section class="past_total_days">连续签到<span>2</span>天</section>
                 </section>
-                <section class="past-days">
-                    <p>第2天</p><p>200金币</p>
+                <section class="past_days1-4">
+                    <section class="past_days1 up_pd1">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">第一天</section>
+                        <section class="up_gold_img up_img1"></section>
+                        <section class="past_part_gold"><span>100</span>金币</section>
+                    </section>
+                    <section class="past_days1 up_pd2">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">第二天</section>
+                        <section class="up_gold_img up_img2"></section>
+                        <section class="past_part_gold"><span>188</span>金币</section>
+                    </section>
+                    <section class="past_days1 up_pd3">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">第三天</section>
+                        <section class="up_gold_img up_img2"></section>
+                        <section class="past_part_gold"><span>200</span>金币</section>
+                    </section>
+                    <section class="past_days1 up_pd4">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">第四天</section>
+                        <section class="up_gold_img up_img3"></section>
+                        <section class="past_part_gold"><span>200</span>金币</section>
+                    </section>
                 </section>
-                <section class="past-days">
-                    <p>第3天</p><p>300金币</p>
+                <section class="past_days5-7">
+                    <section class="past_days2 up_pd5">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">第五天</section>
+                        <section class="up_gold_img up_img3"></section>
+                        <section class="past_part_gold"><span>288</span>金币</section>
+                    </section>
+                    <section class="past_days2 up_pd6">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">第六天</section>
+                        <section class="up_gold_img up_img4"></section>
+                        <section class="past_part_gold"><span>288</span>金币</section>
+                    </section>
+                    <section class="past_days2 up_pd7">
+                        <section class="up_pd_border" style="display: none;"></section>
+                        <section class="past_part">六天以上</section>
+                        <section class="up_gold_img up_img5"></section>
+                        <section class="past_part_gold"><span>随机</span>金币</section>
+                    </section>
                 </section>
-                <section class="past-days">
-                    <p>第4天</p><p>400金币</p>
-                </section>
-                <section class="past-days">
-                    <p>第5天</p><p>500金币</p>
-                </section>
-                <section class="past-days">
-                    <p>第6天</p><p>600金币</p>
-                </section>
-                <section class="past-days">
-                    <p>第7天</p><p>700金币</p>
-                </section>
-                <section class="test_btn test2_btn">点击获取</section>
+                <section class="user_past_btn test2_btn"></section>
                 <section class="test_success" style="display: none;">恭喜您领取成功！</section>
                 <section class="test_fail" style="display: none;">领取失败了</section>
             </section>
+        </section>
         </section>
         <!-- 支付成功弹出框 -->
         <section class="recharge_success_popup" style="display: none;">
@@ -73,100 +100,106 @@
             <section class="rsp_present_golds">赠送<span>10000</span>金币</section>
             <section class="rsp_confirm_btn"></section>
         </section>
+        <!-- 金币弹出框 -->
+        <section class="gold_pop_up" style="display: none;">
+            <section class="gold_popo_up_close"></section>
+            <!-- 金币弹出框容器 -->
+            <section class="gpp_container">
+                <!-- 金币弹出框首部内容 -->
+                <section class="gpp_top">
+                    <span class="golds">我的金币:<span class="my_golds">200000</span></span>
+                    <section class="gold_detail">
+                        <section class="golds_icon"></section>
+                        <a href="goldrecord.html" data-ajax="false">金币明细</a>
+                    </section>
+                </section>
+                <!-- 金币充值内容 -->
+                <section class="gpp_content">
+                    <section class="gold_lv gold_lv1">
+                        <section class="gold_1">
+                            <section class="gold_img gold_img1"></section>
+                        </section>
+                        <div class="gpp_gold_num"><span>1000</span>金币</div>
+                        <section class="get_btn "></section>
+                    </section>
+                    <section class="gold_lv gold_lv2">
+                        <section class="gold_1">
+                            <section class="gold_img gold_img2"></section>
+                        </section>
+                        <div class="gpp_gold_num"><span>10000</span>金币</div>
+                        <span>赠送<span class="gpp_present_num">200</span>金币(2%）</span>
+                        <section class="get_btn"></section>
+                    </section>
+                    <section class="gold_lv gold_lv3">
+                        <section class="gold_1">
+                            <section class="gold_img gold_img3"></section>
+                        </section>
+                        <div class="gpp_gold_num"><span>50000</span>金币</div>
+                        <span>赠送<span class="gpp_present_num">1500</span>金币(3%）</span>
+                        <section class="get_btn"></section>
+                    </section>
+                    <section class="gold_lv gold_lv4">
+                        <section class="gold_1">
+                            <section class="gold_img gold_img4"></section>
+                        </section>
+                        <div class="gpp_gold_num"><span>100000</span>金币</div>
+                        <span>赠送<span class="gpp_present_num">4000</span>金币(4%）</span>
+                        <section class="get_btn"></section>
+                    </section>
+                    <section class="gold_lv5">
+                        <section class="gpp_gold_num" style="display: none;"><span>500000</span></section>
+                        <section class="gpp_present_num" style="display: none;">25000</section>
+                        <section class="gold_img5"></section>
+                        <section class="gold_lv5_num">
+                            <section class="gold_lv5_minus"></section>
+                            <section class="gold_lv5_num_content"><span>500000</span>金币</section>
+                            <section class="gold_lv5_plus"></section>
+                        </section>
+                        <section class="lv5_present">赠送<span>25000</span>金币</section>
+                        <section class="lv5_get_btn"></section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- 单个金币弹出框 -->
+        <section class="single_gold_popup" style="display: none;">
+            <section class="sgp_close"></section>
+            <section class="sgp_golds">
+                <span>50000</span><img src="img/recharge/single_popup/gold.png">
+            </section>
+            <section class="sgp_present">赠送<span>10000</span>金币</section>
+            <section class="sgp_golds_m">
+                立即支付<span>15</span>元
+            </section>
+            <section class="sgp_btns">
+                <section class="sgp_btn_wx"><a href="#">微信支付</a></section>
+                <section class="sgp_btn_zfb"><a href="#">支付宝支付</a></section>
+            </section>
+            <!-- 充值提醒 -->
+            <section class="sgp_tips">您将充值贝壳，充值后将自动兑换<img src="img/recharge/single_popup/suggest.png"></section>
+            <section class="sgp_line"></section>
+            <section class="game_protocol">
+                <img src="img/recharge/single_popup/tick.png">
+                <span>我已阅读并同意《玩贝电竞游戏协议》</span>
+            </section>
+        </section>
         <!-- 导航栏 -->
         <header>
+            <section class="lol_icon_content">
+                <section class="lol_content"></section>
+            </section>
             <!-- 金币框 -->
             <section class="gold_show">
                 <section class="gold_logo"></section>
                 <section class="gold_content">352232</section>
                 <section class="gold_plus"></section>
             </section>
-            <!-- 金币弹出框 -->
-            <section class="gold_pop_up" style="display: none;">
-                <section class="gold_popo_up_close"></section>
-                <!-- 金币弹出框容器 -->
-                <section class="gpp_container">
-                    <!-- 金币弹出框首部内容 -->
-                    <section class="gpp_top">
-                        <span class="golds">我的金币:<span class="my_golds">200000</span></span>
-                        <section class="gold_detail">
-                            <section class="golds_icon"></section>
-                            <a href="goldrecord.html" data-ajax="false">金币明细</a>
-                        </section>
-                    </section>
-                    <!-- 金币充值内容 -->
-                    <section class="gpp_content">
-                        <section class="gold_lv gold_lv1">
-                            <section class="gold_1">
-                                <section class="gold_img gold_img1"></section>
-                            </section>
-                            <div class="gpp_gold_num"><span>1000</span>金币</div>
-                            <section class="get_btn "></section>
-                        </section>
-                        <section class="gold_lv gold_lv2">
-                            <section class="gold_1">
-                                <section class="gold_img gold_img2"></section>
-                            </section>
-                            <div class="gpp_gold_num"><span>10000</span>金币</div>
-                            <span>赠送<span class="gpp_present_num">200</span>金币(2%）</span>
-                            <section class="get_btn"></section>
-                        </section>
-                        <section class="gold_lv gold_lv3">
-                            <section class="gold_1">
-                                <section class="gold_img gold_img3"></section>
-                            </section>
-                            <div class="gpp_gold_num"><span>50000</span>金币</div>
-                            <span>赠送<span class="gpp_present_num">1500</span>金币(3%）</span>
-                            <section class="get_btn"></section>
-                        </section>
-                        <section class="gold_lv gold_lv4">
-                            <section class="gold_1">
-                                <section class="gold_img gold_img4"></section>
-                            </section>
-                            <div class="gpp_gold_num"><span>100000</span>金币</div>
-                            <span>赠送<span class="gpp_present_num">4000</span>金币(4%）</span>
-                            <section class="get_btn"></section>
-                        </section>
-                        <section class="gold_lv5">
-                            <section class="gpp_gold_num" style="display: none;"><span>500000</span></section>
-                            <section class="gpp_present_num" style="display: none;">25000</section>
-                            <section class="gold_img5"></section>
-                            <section class="gold_lv5_num">
-                                <section class="gold_lv5_minus"></section>
-                                <section class="gold_lv5_num_content"><span>500000</span>金币</section>
-                                <section class="gold_lv5_plus"></section>
-                            </section>
-                            <section class="lv5_present">赠送<span>25000</span>金币</section>
-                            <section class="lv5_get_btn"></section>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <!-- 单个金币弹出框 -->
-            <section class="single_gold_popup" style="display: none;">
-                <section class="sgp_close"></section>
-                <section class="sgp_golds">
-                    <span>50000</span><img src="img/recharge/single_popup/gold.png">
-                </section>
-                <section class="sgp_present">赠送<span>10000</span>金币</section>
-                <section class="sgp_golds_m">
-                   立即支付<span>15</span>元
-                </section>
-                <section class="sgp_btns">
-                  <section class="sgp_btn_wx"><a href="#">微信支付</a></section>
-                  <section class="sgp_btn_zfb"><a href="#">支付宝支付</a></section>
-                </section>
-                <!-- 充值提醒 -->
-                <section class="sgp_tips">您将充值贝壳，充值后将自动兑换<img src="img/recharge/single_popup/suggest.png"></section>
-                <section class="sgp_line"></section>
-                <section class="game_protocol">
-                    <img src="img/recharge/single_popup/tick.png">
-                    <span>我已阅读并同意《玩贝电竞游戏协议》</span>
-                </section>
-            </section>
+            <!-- 任务图标 -->
+            <section class="task_icon"></section>
+            <!-- 排行图标 -->
+            <section class="rank_icon"></section>
             <!-- 领奖图标 -->
-            <section class="accept_prize">
-            </section>
+            <section class="accept_prize"></section>
         </header>
         <!-- 横幅 -->
         <section class="banner"></section>
@@ -197,6 +230,10 @@
                 <section class="hero"></section>
             </section>
         </section>
+        <footer>
+            <section class="help_center"><img src="img/help.png">帮助中心</section>
+            <section class="switch_game"><img src="img/switch.png">切换游戏</section>
+        </footer>
     </div>
     <!-- 对屏幕尺寸做判断 -->
     <script type="text/javascript" src="js/screenJudge.js"></script>
